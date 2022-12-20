@@ -1,0 +1,372 @@
+/* 
+    Cor para fundos principais (caramelo) -> #d6ba73
+    Cor para titulos principais (marrom) -> #472c1b
+    Cor para fundos secundarios (cinza) -> #b9c0da
+    Cor para fundos principais -> #d6ba73
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #472C1B;
+}
+
+/*CABEÇALho ---------------------------*/
+
+header {
+    background-color: #d6ba73;
+}
+
+header nav {
+    background-color: #a89863;
+    opacity: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: 20px;
+    margin: 0 5px 0 0;
+}
+
+header nav:hover {
+    opacity: 100%;
+    background-color: #a89863;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header #esconder {
+    background-color: #d6ba73;
+    width: 100%;
+    height: 58px;
+}
+
+/*APRESENTAÇÃO -----------------------------*/
+
+header #container {
+    display: flex;
+    justify-content: center;
+    padding: 210px;
+    text-align: center;
+}
+
+header #container img {
+    width: 170px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #472C1B;
+}
+
+header #container div {
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header #container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #472C1B;
+}
+
+header #container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #472C1B;
+}
+
+
+/* SOBRE MIM ----------------------------*/
+
+#sobre {
+    margin-top: 120px;
+}
+
+#sobre h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#sobre p {
+    text-align: justify;
+    font-size: 22px;
+    margin: 20px 150px 0 150px;
+}
+
+/* PROJETOS ----------------------------*/
+
+#projetos {
+    margin-top: 120px;
+}
+
+#projetos h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#cartoes {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+#projetos a {
+    text-decoration: none;
+}
+
+#projetos img {
+    width: 300px;
+    border-radius: 30px 30px 0px 0px;
+}
+#projetos #cartoes #nome {
+    background-color: #0090C1;
+    padding: 10px;
+    margin-top: -4px;
+    color:white;
+    text-align: center;
+}
+
+#cartoes a:hover {
+    transform: scale(1.1);
+}
+
+/* EXPERIENCIAS ----------------------------*/
+
+#exp {
+    margin-top: 120px;
+}
+
+#exp h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#exp-container{
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    gap: 100px 300px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#exp-container h3 {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#exp-container img {
+    width: 150px;
+    height: 150px;
+}
+
+#link-cv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#link-cv a {
+    background-color: #d6ba73;
+    padding: 20px 100px;
+    border-radius: 50px;
+    color: #472C1B;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#link-cv ion-icon {
+   font-size: 25px;
+   position: relative;
+   top: 5px;
+   left: -5px;
+}
+
+#link-cv a:hover {
+    background-color: #a59160;
+    color: white;
+}
+
+/* CONTATO ----------------------------*/
+
+#contato {
+    margin-top: 120px;
+}
+
+#contato h1 {
+    text-align: center;
+    font-size: 30px;
+}
+#contato h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    font-style: italic;
+    color: #472C1B;
+}
+
+#ctt-container {
+    display: flex;
+    margin-top: 50px;
+    gap: 150px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* FOOTER ----------------------------*/
+
+footer {
+    margin-top: 100px;
+    background-color: #D6BA73;
+    padding: 50px;
+    text-align: center;
+}
+
+footer p {
+    color: #472C1B;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE ----------------------------*/
+@media (max-width: 600px) {
+    header {
+        background-color: #d6ba73;
+    }
+    
+    header nav {
+        background-color: #472c1b4d;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1px;
+        position: fixed;
+        width: 100%;
+    }
+    
+    header nav a {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        text-transform: lowercase;
+        padding: 20px;
+        margin: 0 5px 0 0;
+        flex-wrap: wrap;
+    }
+    
+    header nav:hover {
+        background-color: #a89863;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
+    }
+    
+    header nav a:hover {
+        text-decoration: underline;
+    }
+    
+    header #esconder {
+        background-color: #d6ba73;
+        width: 100%;
+        height: 58px;
+    }
+
+    /* SOBRE MIM ----------------------------*/
+
+#sobre {
+    margin-top: 120px;
+}
+
+#sobre h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#sobre p {
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px 30px 0 30px;
+}
+
+/* PROJETOS ----------------------------*/
+
+#projetos {
+    margin-top: 120px;
+}
+
+#projetos h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#cartoes {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+#projetos a {
+    text-decoration: none;
+}
+
+#projetos img {
+    width: 300px;
+    border-radius: 30px 30px 0px 0px;
+}
+#projetos #cartoes #nome {
+    background-color: #0090C1;
+    padding: 10px;
+    margin-top: -4px;
+    color:white;
+    text-align: center;
+}
+
+#cartoes a:hover {
+    transform: scale(1.1);
+}
+
+
+}
